@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--tests级别：不同test tag下的用例可以在不同的线程执行，相同test tag下的用例只能在同一个线程中执行。-->
+<!--classs级别：不同class tag下的用例可以在不同的线程执行，相同class tag下的用例只能在同一个线程中执行。-->
+<!--methods级别：所有用例都可以在不同的线程去执行。-->
+<!--thread-count: 并发线程数-->
+
+<suite name="qywx_service_api">
+
+    <test name="通讯录">
+        <classes>
+            <class name="com.qq.qywx.addressbook.user.TestAddressbookGetAccessToken">
+                <methods>
+                    <include name="testAddressbookGetAccessToken"/>
+                </methods>
+            </class>
+            <class name="com.qq.qywx.addressbook.user.TestCreateUser">
+                <methods>
+                    <include name="testCreateUser"/>
+                </methods>
+            </class>
+            <class name="com.qq.qywx.addressbook.user.TestGetUser">
+                <methods>
+                    <include name="testGetUser"/>
+                </methods>
+            </class>
+            <class name="com.qq.qywx.addressbook.user.TestUpdateUser">
+                <methods>
+                    <include name="testUpdateUser"/>
+                </methods>
+            </class>
+            <class name="com.qq.qywx.addressbook.user.TestDeleteUser">
+                <methods>
+                    <include name="testDeleteUser"/>
+                </methods>
+            </class>
+            <class name="com.qq.qywx.addressbook.user.TestBatchDeleteUser">
+                <methods>
+                    <include name="testBatchDeleteUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="客户联系">
+        <classes>
+            <class name="com.qq.qywx.externalcontact.customer.TestExternalcontactGetAccessToken">
+                <methods>
+                    <include name="testExternalcontactGetAccessToken"/>
+                </methods>
+            </class>
+            <class name="com.qq.qywx.externalcontact.customer.TestListCustomer">
+                <methods>
+                    <include name="testListCustomer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- 配置监听器 -->
+    <listeners>
+        <!-- 失败重试监听器 -->
+        <listener class-name="com.qq.qywx.common.retry.RetryListener"></listener>
+        <listener class-name="com.qq.qywx.common.retry.TestngListener"></listener>
+        <!-- 测试报告监听器 -->
+        <!--<listener class-name="xyz.vivo.vform.common.utils.ZTestReport"></listener>-->
+        <listener class-name="com.qq.qywx.common.utils.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>
