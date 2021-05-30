@@ -1,0 +1,44 @@
+2021-05-19 11:54:34,146 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/gettoken]获取access_token
+2021-05-19 11:54:34,483 [INFO] com.qq.qywx.common.utils.HttpUtils - [get]https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=ww97d35aaa92f1422a&corpsecret=MA8a92IiNWa4L9UnmNNwL8ruQqM7ZaJOo8cXu9zUMl8
+2021-05-19 11:54:35,664 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, access_token=qDtvZTcHopon0s6U9bxgwGU1V83UwYUdxffpu2gsCAodGONX0TrAsSMxBnSruJR_0iRcav9UEouDdlO_nGSO7b4PXv97mDmsJrsuY-DKJlkat8fj1zWXKze6AF938Z0i16oRtxlUkck4GFd6Th_EnaIMFBdWKnu3ePWXNp3eJLyiqEAlXeUlM94-XWmgEzGj8mB2uvKUuWFt8tmvLS-Ukw, errmsg=ok, expires_in=7200}
+2021-05-19 11:54:35,998 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/user/create]创建成员
+2021-05-19 11:54:35,998 [INFO] com.qq.qywx.common.utils.HttpUtils - [post]https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token=qDtvZTcHopon0s6U9bxgwGU1V83UwYUdxffpu2gsCAodGONX0TrAsSMxBnSruJR_0iRcav9UEouDdlO_nGSO7b4PXv97mDmsJrsuY-DKJlkat8fj1zWXKze6AF938Z0i16oRtxlUkck4GFd6Th_EnaIMFBdWKnu3ePWXNp3eJLyiqEAlXeUlM94-XWmgEzGj8mB2uvKUuWFt8tmvLS-Ukw&body={
+    "userid": "test_55ab93c6e46a",
+    "name": "test_55ab93c6e46a",
+    "alias": "test_55ab93c6e46a",
+    "mobile": "15712798423",
+    "department": [1, 2],
+    "order":[10,40],
+    "position": "产品经理"
+}
+2021-05-19 11:54:36,351 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, errmsg=created}
+2021-05-19 11:54:36,363 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/user/get]创建成员
+2021-05-19 11:54:36,363 [INFO] com.qq.qywx.common.utils.HttpUtils - [get]https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=qDtvZTcHopon0s6U9bxgwGU1V83UwYUdxffpu2gsCAodGONX0TrAsSMxBnSruJR_0iRcav9UEouDdlO_nGSO7b4PXv97mDmsJrsuY-DKJlkat8fj1zWXKze6AF938Z0i16oRtxlUkck4GFd6Th_EnaIMFBdWKnu3ePWXNp3eJLyiqEAlXeUlM94-XWmgEzGj8mB2uvKUuWFt8tmvLS-Ukw&userid=test_55ab93c6e46a
+2021-05-19 11:54:36,509 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, isleader=0, gender=0, mobile=15712798423, errmsg=ok, is_leader_in_dept=[0, 0], telephone=, avatar=, hide_mobile=0, main_department=1, userid=test_55ab93c6e46a, thumb_avatar=, enable=1, name=test_55ab93c6e46a, extattr={attrs=[]}, qr_code=https://open.work.weixin.qq.com/wwopen/userQRCode?vcode=vc709c0195e1989585, alias=test_55ab93c6e46a, position=产品经理, department=[2, 1], email=, status=4, order=[40, 10]}
+2021-05-19 11:54:36,530 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/user/update]更新成员
+2021-05-19 11:54:36,531 [INFO] com.qq.qywx.common.utils.HttpUtils - [post]https://qyapi.weixin.qq.com/cgi-bin/user/update?access_token=qDtvZTcHopon0s6U9bxgwGU1V83UwYUdxffpu2gsCAodGONX0TrAsSMxBnSruJR_0iRcav9UEouDdlO_nGSO7b4PXv97mDmsJrsuY-DKJlkat8fj1zWXKze6AF938Z0i16oRtxlUkck4GFd6Th_EnaIMFBdWKnu3ePWXNp3eJLyiqEAlXeUlM94-XWmgEzGj8mB2uvKUuWFt8tmvLS-Ukw&body={
+    "userid": "test_55ab93c6e46a",
+    "name": "测试",
+    "department": [1, 2],
+    "order":[10,40],
+    "position": "自动化测试工程师"
+}
+2021-05-19 11:54:36,785 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, errmsg=updated}
+2021-05-19 11:54:36,811 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/user/delete]删除成员
+2021-05-19 11:54:36,811 [INFO] com.qq.qywx.common.utils.HttpUtils - [get]https://qyapi.weixin.qq.com/cgi-bin/user/delete?access_token=qDtvZTcHopon0s6U9bxgwGU1V83UwYUdxffpu2gsCAodGONX0TrAsSMxBnSruJR_0iRcav9UEouDdlO_nGSO7b4PXv97mDmsJrsuY-DKJlkat8fj1zWXKze6AF938Z0i16oRtxlUkck4GFd6Th_EnaIMFBdWKnu3ePWXNp3eJLyiqEAlXeUlM94-XWmgEzGj8mB2uvKUuWFt8tmvLS-Ukw&userid=test_55ab93c6e46a
+2021-05-19 11:54:37,053 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, errmsg=deleted}
+2021-05-19 11:54:37,065 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/user/create]创建成员
+2021-05-19 11:54:37,065 [INFO] com.qq.qywx.common.utils.HttpUtils - [post]https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token=qDtvZTcHopon0s6U9bxgwGU1V83UwYUdxffpu2gsCAodGONX0TrAsSMxBnSruJR_0iRcav9UEouDdlO_nGSO7b4PXv97mDmsJrsuY-DKJlkat8fj1zWXKze6AF938Z0i16oRtxlUkck4GFd6Th_EnaIMFBdWKnu3ePWXNp3eJLyiqEAlXeUlM94-XWmgEzGj8mB2uvKUuWFt8tmvLS-Ukw&body={"name":"test_9adf8acb1b1f","mobile":"15758175775","position":"测试","department":1,"userid":"test_9adf8acb1b1f"}
+2021-05-19 11:54:37,385 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, errmsg=created. Warning: wrong json format. }
+2021-05-19 11:54:37,385 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/user/create]创建成员
+2021-05-19 11:54:37,385 [INFO] com.qq.qywx.common.utils.HttpUtils - [post]https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token=qDtvZTcHopon0s6U9bxgwGU1V83UwYUdxffpu2gsCAodGONX0TrAsSMxBnSruJR_0iRcav9UEouDdlO_nGSO7b4PXv97mDmsJrsuY-DKJlkat8fj1zWXKze6AF938Z0i16oRtxlUkck4GFd6Th_EnaIMFBdWKnu3ePWXNp3eJLyiqEAlXeUlM94-XWmgEzGj8mB2uvKUuWFt8tmvLS-Ukw&body={"name":"test_189ff4d2eea1","mobile":"17794351368","position":"测试","department":1,"userid":"test_189ff4d2eea1"}
+2021-05-19 11:54:37,684 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, errmsg=created. Warning: wrong json format. }
+2021-05-19 11:54:37,685 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/user/batchdelete]批量删除成员
+2021-05-19 11:54:37,685 [INFO] com.qq.qywx.common.utils.HttpUtils - [post]https://qyapi.weixin.qq.com/cgi-bin/user/batchdelete?access_token=qDtvZTcHopon0s6U9bxgwGU1V83UwYUdxffpu2gsCAodGONX0TrAsSMxBnSruJR_0iRcav9UEouDdlO_nGSO7b4PXv97mDmsJrsuY-DKJlkat8fj1zWXKze6AF938Z0i16oRtxlUkck4GFd6Th_EnaIMFBdWKnu3ePWXNp3eJLyiqEAlXeUlM94-XWmgEzGj8mB2uvKUuWFt8tmvLS-Ukw&body={"useridlist":["test_9adf8acb1b1f","test_189ff4d2eea1"]}
+2021-05-19 11:54:37,991 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, errmsg=deleted}
+2021-05-19 11:54:38,003 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/gettoken]获取access_token
+2021-05-19 11:54:38,003 [INFO] com.qq.qywx.common.utils.HttpUtils - [get]https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=ww97d35aaa92f1422a&corpsecret=NJRrZzNF5_QTqs5ZBGmnMEnmKEh5ByX1vROdcqN7MtM
+2021-05-19 11:54:38,160 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, access_token=GROkumahEqetzK0vtXmnoyJdFod9WhTAc0esBfl7AIm9PQ3VdBwHdzNf6qBctBXHvCJFZ8Mzab5WYnfa_YWXxyDlGT3NElDJpIF4RAJqYaYWMBFGTcQos-Toxngb2Jnj4dF-nRlnprM-6EClbDQl8KVoZE5VG8mZ8yPv0nAsWGTjDd0yJ7ZXhnmwvy_y1VXiXSfNhToL6VSTgpdbIQkadg, errmsg=ok, expires_in=7200}
+2021-05-19 11:54:38,276 [INFO] com.qq.qywx.common.utils.ProxyUtils - [/cgi-bin/externalcontact/list]获取客户列表
+2021-05-19 11:54:38,276 [INFO] com.qq.qywx.common.utils.HttpUtils - [get]https://qyapi.weixin.qq.com/cgi-bin/externalcontact/list?access_token=GROkumahEqetzK0vtXmnoyJdFod9WhTAc0esBfl7AIm9PQ3VdBwHdzNf6qBctBXHvCJFZ8Mzab5WYnfa_YWXxyDlGT3NElDJpIF4RAJqYaYWMBFGTcQos-Toxngb2Jnj4dF-nRlnprM-6EClbDQl8KVoZE5VG8mZ8yPv0nAsWGTjDd0yJ7ZXhnmwvy_y1VXiXSfNhToL6VSTgpdbIQkadg&userid=HongLi
+2021-05-19 11:54:38,439 [INFO] com.qq.qywx.common.utils.HttpUtils - [200]{errcode=0, external_userid=[wm1h_uCwAAk70DzCKMiBNb8zJjz5er0A], errmsg=ok}
